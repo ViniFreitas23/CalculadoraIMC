@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculadoraIMC">
+        <activity android:name=".tabela"></activity>
+        <activity
+            android:name=".tabelaIMC"
+            android:label="@string/title_activity_tabela_imc"
+            android:theme="@style/Theme.CalculadoraIMC.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
