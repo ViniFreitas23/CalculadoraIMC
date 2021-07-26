@@ -15,12 +15,6 @@ class MainActivity : AppCompatActivity() {
 
         val btCalcular : Button  = calcular
         val resultado : TextView = resultado
-        val btTabela : Button = table
-
-        btTabela.setOnClickListener{
-            val intent = Intent(this, tabela::class.java)
-            startActivity(intent)
-        }
 
         btCalcular.setOnClickListener{
             val peso: Float = (peso.text.toString()).toFloat()
