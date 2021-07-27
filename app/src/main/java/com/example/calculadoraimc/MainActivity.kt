@@ -26,12 +26,15 @@ class MainActivity : AppCompatActivity() {
             if (imc < 18.5){
                 resultado.setText("Você está abaixo do peso!" + "\n" + "Seu IMC é: " + "%.2f".format(imc))
                 resultado.setTextColor(Color.RED)
-            } else if (imc > 24.9 && imc < 30){
+            } else if (imc > 24.9){
                 resultado.setText("Você está acima do peso!" + "\n" + "Seu IMC é: " + "%.2f".format(imc))
                 resultado.setTextColor(Color.RED)
-            } else {
+            } else if (imc >= 18.5 && imc <= 24.9){
                 resultado.setText("Seu peso está normal!" + "\n" + "Seu IMC é: " + "%.2f".format(imc))
                 resultado.setTextColor(Color.rgb(92, 192, 67))
+            } else {
+                resultado.setText("Erro!" + "\n")
+                resultado.setTextColor(Color.RED)
             }
 
         }
