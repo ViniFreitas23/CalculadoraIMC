@@ -102,13 +102,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="271dp"
-        android:layout_height="306dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="318dp"
+        android:layout_height="313dp"
+        app:layout_constraintBottom_toTopOf="@+id/peso"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imc" />
+        app:layout_constraintVertical_bias="0.473"
+        app:srcCompat="@drawable/imc2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
